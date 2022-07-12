@@ -11,105 +11,105 @@ var pos3=document.querySelector('.pos3');
 var pos4=document.querySelector('.pos4');
 
 
-// btn1.addEventListener('click',function(){
-//     pos1.classList.remove('right');
-//     pos1.classList.add('current');
+btn1.addEventListener('click',function(){
+    pos1.classList.remove('right');
+    pos1.classList.add('current');
 
-//     // remove class 
-//     pos2.classList.remove('current');
-//     pos3.classList.remove('current');
-//     pos4.classList.remove('current');
+    // remove class 
+    pos2.classList.remove('current');
+    pos3.classList.remove('current');
+    pos4.classList.remove('current');
 
-//     // add class 
-//     pos2.classList.add('right');
-//     pos3.classList.add('right');
-//     pos4.classList.add('right');
+    // add class 
+    pos2.classList.add('right');
+    pos3.classList.add('right');
+    pos4.classList.add('right');
 
 
-//     btn1.classList.add('white');
-//     btn2.classList.remove('white');
-//     btn3.classList.remove('white');
-//     btn4.classList.remove('white');
+    btn1.classList.add('white');
+    btn2.classList.remove('white');
+    btn3.classList.remove('white');
+    btn4.classList.remove('white');
 
-// })
+})
 
-// btn2.addEventListener('click',function(){
+btn2.addEventListener('click',function(){
     
    
 
-//     pos2.classList.remove('right');
-//     pos2.classList.add('current');
+    pos2.classList.remove('right');
+    pos2.classList.add('current');
 
-//     // remove class 
-//     pos1.classList.remove('current');
-//     pos3.classList.remove('current');
-//     pos4.classList.remove('current');
+    // remove class 
+    pos1.classList.remove('current');
+    pos3.classList.remove('current');
+    pos4.classList.remove('current');
 
-//     // add class 
-//     pos1.classList.add('right');
-//     pos3.classList.add('right');
-//     pos4.classList.add('right');
-
-
-//     //btn color
-//     btn2.classList.add('white');
-//     btn1.classList.remove('white');
-//     btn3.classList.remove('white');
-//     btn4.classList.remove('white');
-
-// })
+    // add class 
+    pos1.classList.add('right');
+    pos3.classList.add('right');
+    pos4.classList.add('right');
 
 
-// btn3.addEventListener('click',function(){
+    //btn color
+    btn2.classList.add('white');
+    btn1.classList.remove('white');
+    btn3.classList.remove('white');
+    btn4.classList.remove('white');
+
+})
+
+
+btn3.addEventListener('click',function(){
     
 
-//     pos3.classList.remove('right');
-//     pos3.classList.add('current');
+    pos3.classList.remove('right');
+    pos3.classList.add('current');
 
-//     // remove class 
-//     pos2.classList.remove('current');
-//     pos1.classList.remove('current');
-//     pos4.classList.remove('current');
+    // remove class 
+    pos2.classList.remove('current');
+    pos1.classList.remove('current');
+    pos4.classList.remove('current');
 
-//     // add class 
-//     pos2.classList.add('right');
-//     pos1.classList.add('right');
-//     pos4.classList.add('right');
-
-
-//     //btn color
-//     btn3.classList.add('white');
-//     btn1.classList.remove('white');
-//     btn2.classList.remove('white');
-//     btn4.classList.remove('white');
+    // add class 
+    pos2.classList.add('right');
+    pos1.classList.add('right');
+    pos4.classList.add('right');
 
 
-// })
+    //btn color
+    btn3.classList.add('white');
+    btn1.classList.remove('white');
+    btn2.classList.remove('white');
+    btn4.classList.remove('white');
 
 
-// btn4.addEventListener('click',function(){
+})
+
+
+btn4.addEventListener('click',function(){
    
-//     pos4.classList.remove('right');
-//     pos4.classList.add('current');
+    pos4.classList.remove('right');
+    pos4.classList.add('current');
 
-//     // remove class 
-//     pos2.classList.remove('current');
-//     pos3.classList.remove('current');
-//     pos1.classList.remove('current');
+    // remove class 
+    pos2.classList.remove('current');
+    pos3.classList.remove('current');
+    pos1.classList.remove('current');
 
-//     // add class 
-//     pos2.classList.add('right');
-//     pos3.classList.add('right');
-//     pos1.classList.add('right');
+    // add class 
+    pos2.classList.add('right');
+    pos3.classList.add('right');
+    pos1.classList.add('right');
 
 
     
-//     //btn color
-//     btn4.classList.add('white');
-//     btn1.classList.remove('white');
-//     btn3.classList.remove('white');
-//     btn2.classList.remove('white');
-// })
+    //btn color
+    btn4.classList.add('white');
+    btn1.classList.remove('white');
+    btn3.classList.remove('white');
+    btn2.classList.remove('white');
+})
 
 
 // touch swipe 
@@ -177,11 +177,11 @@ distX = 0
 startX = touchobj.pageX
 startY = touchobj.pageY
 startTime = new Date().getTime() // record time when finger first makes contact with surface
-e.preventDefault()
+// e.preventDefault()
 }, false)
 
 document.addEventListener('touchmove', function(e){
-e.preventDefault() // prevent scrolling when inside DIV
+// e.preventDefault() // prevent scrolling when inside DIV
 }, false)
 
 document.addEventListener('touchend', function(e){
@@ -195,6 +195,6 @@ if (elapsedTime <= allowedTime){ // first condition for awipe met
     }
 }
 handleswipe(swiper)
-e.preventDefault()
+// e.preventDefault()
 }, false)
 
